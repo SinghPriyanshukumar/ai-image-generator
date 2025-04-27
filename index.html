@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+      AI Image generator Website using HTML, CSS and JavaScript
+    </title>
+    
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main container for all the content -->
+    <div class="main-container">
+
+        <!-- Container for the heading and form -->
+        <div class="container">
+            
+            <!-- Section for page headings -->
+            <div class="headings-container">
+                <h1>our  own</h1> <!-- Main heading -->
+                <h2 class="heading">
+                  	AI Image generator website using JavaScript
+                </h2> <!-- Secondary heading explaining the purpose -->
+                <h5 class="sub-heading">
+                  Enter the text in the below input bar and 
+                  <br />
+                  get the AI generated image related to this text.
+                </h5> <!-- Subheading with instructions -->
+            </div>
+
+            <!-- Form container for input and submit button -->
+            <div id="generate-image-form" class="form-container">
+                
+                <!-- Form to input text and generate image -->
+                <form class="my-form">
+                    <!-- Text input for the user to enter some text -->
+                    <input id="input-value" 
+                           placeholder="Enter some text..." 
+                           type="text"
+                           class="form-input form-controls">
+
+                    <!-- Button to submit and generate image -->
+                    <button type="submit" 
+                            class="image-generate-btn 
+                                   form-controls">
+                      	Generate Image
+                    </button>
+                </form>
+            </div>
+
+            <!-- Section to display the generated image -->
+            <div id="images-visible" class="image-container">
+                <!-- Placeholder text that will be updated with the result -->
+                <p id="imageContainerText"></p>
+                
+                <!-- Image tag to display the AI generated image -->
+                <img id="generated-image" 
+                     class="my-generated-image" 
+                     src='' alt="AI Generated Image">
+            </div>
+        </div>
+    </div>
